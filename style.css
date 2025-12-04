@@ -1,0 +1,85 @@
+/* styles.css - shared by all pages */
+
+/* 1) body: font family and font size */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;           /* base size; adjust for your design */
+  margin: 0;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f7f7f7;
+}
+
+/* 2) header: background color */
+header {
+  background-color: #0b6fa4; /* pleasant blue */
+  padding: 20px 16px;
+  color: #fff;               /* text color on header */
+}
+
+/* 3) nav: background color */
+nav {
+  background-color: #083e57; /* darker blue for nav */
+  padding: 10px 16px;
+}
+
+/* nav links (optional, improves readability) */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+/* 4) main: background color and font size */
+main {
+  background-color: #ffffff;
+  font-size: 1rem;           /* 1rem = body font-size (16px by default) */
+  padding: 24px 16px;
+  min-height: 320px;
+}
+
+/* 5) footer: background color */
+footer {
+  background-color: #0b6fa4;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+/* 6) li: display and width */
+li {
+  display: inline-block;     /* inline-block lets list items sit side-by-side */
+  width: auto;               /* 'auto' for flexible width; change to 150px if fixed needed */
+  margin-right: 12px;
+  vertical-align: middle;
+  list-style: none;          /* remove default bullets (if desired) */
+}
+
+/* If you need a fixed width for menu items, you could use:
+li { display: inline-block; width: 140px; }
+*/
+
+/* 7) h1: text alignment, font family, color */
+h1 {
+  text-align: left;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #052a3a;            /* dark teal */
+  margin: 0 0 12px 0;
+  font-size: 1.75rem;
+  line-height: 1.15;
+}
+
+/* 8) p: line height */
+p {
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+/* Small responsive helpers */
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  nav a { display: block; padding: 10px 0; }
+  li { display: block; width: auto; margin: 6px 0; }
+  h1 { text-align: center; }
+}
